@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="risanchezExamen.Vistas.VResumen"
+             Title="VResumen">
+    <VerticalStackLayout Padding="25" Spacing="20">
+        <Label x:Name="lblUsuarioConectado" FontSize="16" HorizontalTextAlignment="Center" />
+        <Label Text="RESUMEN" TextColor="Blue" FontSize="22" HorizontalTextAlignment="Center" />
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, *" RowSpacing="10">
+            <Label Text="Nombre" TextColor="Blue" Grid.Row="0" Grid.Column="0" />
+            <Label x:Name="lblNombre" Grid.Row="0" Grid.Column="1" />
+            <Label Text="Apellido" TextColor="Blue" Grid.Row="1" Grid.Column="0" />
+            <Label x:Name="lblApellido" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Edad" TextColor="Blue" Grid.Row="2" Grid.Column="0" />
+            <Entry x:Name="entEdad" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" />
+            <Label Text="Fecha" TextColor="Blue" Grid.Row="3" Grid.Column="0" />
+            <Label x:Name="lblFecha" Grid.Row="3" Grid.Column="1" />
+            <Label Text="Ciudad" TextColor="Blue" Grid.Row="4" Grid.Column="0" />
+            <Label x:Name="lblCiudad" Grid.Row="4" Grid.Column="1" />
+            <Label Text="País" TextColor="Blue" Grid.Row="5" Grid.Column="0" />
+            <Label x:Name="lblPais" Grid.Row="5" Grid.Column="1" />
+            <Label Text="Monto Inicial" TextColor="Blue" Grid.Row="6" Grid.Column="0" />
+            <Label x:Name="lblMontoInicial" Grid.Row="6" Grid.Column="1" />
+            <Label Text="Pago Mensual" TextColor="Blue" Grid.Row="7" Grid.Column="0" />
+            <Label x:Name="lblPagoMensual" Grid.Row="7" Grid.Column="1" />
+            <Label Text="Pago Total" TextColor="Blue" Grid.Row="8" Grid.Column="0" />
+            <Label x:Name="lblPagoTotal" Grid.Row="8" Grid.Column="1" />
+        </Grid>
+        <Button x:Name="btnCerrarSesion" Text="Cerrar Sesión" Clicked="btnCerrarSesion_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="risanchezExamen.Vistas.Info"
+             Title="Info">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30">
+        <Label
+            Text="Iniciar sesión"
+            TextColor="Red"
+            FontSize="24"
+            HorizontalTextAlignment="Center"/>
+        <Grid RowSpacing="20">
+            <!-- Agregamos RowSpacing="20" -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!-- Fila para "Acerca del sistema" -->
+                <RowDefinition Height="Auto" />
+                <!-- Fila para "Nombre" -->
+                <RowDefinition Height="Auto" />
+                <!-- Fila para "Curso" -->
+                <RowDefinition Height="Auto" />
+                <!-- Fila para "Carrera" -->
+                <RowDefinition Height="Auto" />
+                <!-- Fila para "2024" -->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Fila para "Acerca del sistema" -->
+            <Label Text="Acerca del sistema"
+                   TextColor="Blue"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" />
+
+            <!-- Fila para "Nombre" -->
+            <Label Text="Nombre"
+                   TextColor="Blue"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" />
+            <Label Text="Israel Sanchez"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" />
+
+            <!-- Fila para "Curso" -->
+            <Label Text="Curso"
+                   TextColor="Blue"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" />
+            <Label Text="7mo Informática A"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" />
+
+            <!-- Fila para "Carrera" -->
+            <Label Text="Carrera"
+                   TextColor="Blue"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" />
+            <Label Text="Ingeniería en Informática"
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" />
+
+            <!-- Fila para "2024" -->
+            <Label Text="2024"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="2"
+                   HorizontalTextAlignment="Center" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="risanchezExamen.Vistas.VRegistro"
+             Title="VRegistro">
+   
+        <VerticalStackLayout Padding="25" Spacing="20">
+            <Label x:Name="lblUsuarioConectado" FontSize="16" HorizontalTextAlignment="Center" />
+            <Label Text="REGISTRO" TextColor="Blue" FontSize="22" HorizontalTextAlignment="Center" />
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, *" RowSpacing="10">
+            <Label Text="Fecha" TextColor="Blue" Grid.Row="0" Grid.Column="0" />
+            <DatePicker x:Name="dpFecha" Grid.Row="0" Grid.Column="1" />
+
+            <Label Text="País" TextColor="Blue" Grid.Row="1" Grid.Column="0" />
+            <Picker x:Name="pkPais" Grid.Row="1" Grid.Column="1" />
+
+            <Label Text="Ciudad" TextColor="Blue" Grid.Row="2" Grid.Column="0" />
+            <Picker x:Name="pkCiudad" Grid.Row="2" Grid.Column="1" />
+
+            <Label Text="Monto Inicial" TextColor="Blue" Grid.Row="3" Grid.Column="0" />
+            <Entry x:Name="entMontoInicial" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" />
+
+            <Label Text="Pago Mensual" TextColor="Blue" Grid.Row="4" Grid.Column="0" />
+            <Entry x:Name="entPagoMensual" IsReadOnly="True" Grid.Row="4" Grid.Column="1" />
+
+            <Label Text="Nombre" TextColor="Blue" Grid.Row="5" Grid.Column="0" />
+            <Entry x:Name="entNombre" Placeholder="Ingresar Nombre" Grid.Row="5" Grid.Column="1" />
+
+            <Label Text="Apellido" TextColor="Blue" Grid.Row="6" Grid.Column="0" />
+            <Entry x:Name="entApellido" Placeholder="Ingresar Apellido" Grid.Row="6" Grid.Column="1" />
+
+            <Label Text="Edad" TextColor="Blue" Grid.Row="7" Grid.Column="0" />
+            <Entry x:Name="entEdad" Keyboard="Numeric" Placeholder="Ingresar Edad" Grid.Row="7" Grid.Column="1" />
+        </Grid>
+
+        <Grid RowDefinitions="Auto" ColumnDefinitions="*, *">
+                <Button x:Name="btnCalcularPago" Text="Calcular Pago Mensual" Grid.Row="0" Grid.Column="0" Clicked="btnCalcularPago_Clicked" />
+                <Button x:Name="btnVerResumen" Text="Ver Resumen" Grid.Row="0" Grid.Column="1" Clicked="btnVerResumen_Clicked" />
+            </Grid>
+        </VerticalStackLayout>
+    </ContentPage>
